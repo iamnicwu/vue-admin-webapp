@@ -4,8 +4,7 @@ const resolve = function(dir) {
 };
 
 module.exports = {
-  publicPath:
-    process.env.NODE_ENV === "production" ? "/vue-admin-webapp/" : "/",
+  publicPath: "/vue-admin-webapp/",
   outputDir: "dist",
   assetsDir: "static",
   lintOnSave: true, // 是否开启eslint保存检测
@@ -17,8 +16,8 @@ module.exports = {
     config.optimization.runtimeChunk("single");
   },
   devServer: {
-    host: "localhost",
-    port: process.env.PORT,
+    host: "127.0.0.1",
+    port: process.env.Port,
     hot: true,
     open: true,
     overlay: {
