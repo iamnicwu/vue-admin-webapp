@@ -18,7 +18,7 @@ module.exports = {
   },
   devServer: {
     host: "localhost",
-    port: "8080",
+    port: process.env.PORT,
     hot: true,
     open: true,
     overlay: {
